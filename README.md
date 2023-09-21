@@ -10,13 +10,7 @@ This problem is a remix of the "Missionaries and Cannibals" problem that famous 
 
 Exactly Three (3) Members of the Federation and of Three (3) Borg find themselves isolated on a strange planet, and despite being enemies, have reached a temporary truce so they can return back to their ships.  However, there is a river in the way, along with a boat that can hold either one or two people. Find a way to get everyone to the other side of the river, without ever leaving a group of humans on either of the river outnumbered by the Borg (lest they become assimilated in to the Borg Hive Mind).
 
-## Solving the Puzzle on Paper
-
-Below is a full state space for my solution and approach to this problem.
-
-![State Diagram](statediagram.jpg)
-
-## Part 2: Improving Search 
+## Part 1: Improving Search 
 
 After improving the orignal search function by memoization, significant speed up's happen when printing out verbosely, implying many less iterations are taking place.
 
@@ -32,8 +26,6 @@ Whereas, the improvedSearch ran for approximately: 0.007 Seconds
 
 Giving this simple change an approx. 98% speedup in the default setup of the pitcher problem
 and about 12.5% speedup in the default setup of the borg problem. 
-
-
 ## Example Runtime
 
 Below is the search algorithms successful path to a goal state where all the borgs and humans have made it to the other side 
